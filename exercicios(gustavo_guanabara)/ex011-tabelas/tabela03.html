@@ -71,6 +71,20 @@
             color: white;
         }
 
+         footer {
+            margin-top: 100px;
+            padding: 5px 10px;
+            display: flex;
+            justify-content: space-between;
+            background-color: rgba(71, 70, 70, 0.281);
+        }
+
+        footer a {
+            color: rgb(4, 27, 58);
+            text-align: center;
+            font-weight: bolder;
+        }
+
     </style>
 
 </head>
@@ -169,14 +183,14 @@
     <table id="tabela4">
         <thead>
             <tr>
-                <th rowspan="2">Área</th>
-                <th rowspan="2">Discilinas</th>
-                <th colspan="2">Notas</th>
-                <th rowspan="2">Médias</th>
+                <th rowspan="2" scope="col">Área</th>
+                <th rowspan="2" scope="col">Discilinas</th>
+                <th colspan="2" scope="col">Notas</th>
+                <th rowspan="2" scope="col">Médias</th>
             </tr>
             <tr>
-                <th>Nota 1</th>
-                <th>Nota 2</th>
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
             </tr>
             <tr>
                 <td rowspan="4" class="materia">Exatas</td>
@@ -203,7 +217,7 @@
                 <td>0.0</td>
                 <td>0.0</td>
             <tr>
-                <th colspan="4">Médias das Exatas</th>
+                <th colspan="4" scope="row">Médias das Exatas</th>
                 <td class="valor">0.0</td>
             </tr>
             <tr>
@@ -220,11 +234,16 @@
                 <td>0.0</td>
             </tr>
             <tr>
-                <th colspan="4">Médias das Humanas</th>
+                <th colspan="4" scope="row">Médias das Humanas</th>
                 <td class="valor">0.0</td>
             </tr>
         </thead>
     </table>
+
+    <footer>
+        <p class="botão volta"> <a href="tabela02.html">Pagina anterior</a> </p>
+        <p><a href="tabela04.html">Proxima pag</a></p>
+    </footer>
 
 
 
