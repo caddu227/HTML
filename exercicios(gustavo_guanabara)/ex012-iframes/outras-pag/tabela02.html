@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> tabelas avançadas </title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        h1 {
+            margin-bottom: 50px;
+            text-align: center;
+            font-size: 2.5em;
+        }
+
+        table {
+            
+            width: 600px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            background-color: gray;
+            font-size: 1.5em;
+            padding: 10px;
+            font-weight: bolder;
+        }
+
+        td, th, caption { 
+            border: 1px solid black;
+            padding: 7px;
+
+        }
+
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(131, 126, 126);
+        }
+
+        thead, tfoot {
+            background-color: rgb(131, 126, 126);
+            color: aliceblue;
+        }
+
+        td.num {
+            text-align: right;
+        }
+
+
+        footer {
+            margin-top: 100px;
+            padding: 5px 10px;
+            display: flex;
+            justify-content: space-between;
+            background-color: rgba(71, 70, 70, 0.281);
+        }
+
+        footer a {
+            color: rgb(4, 27, 58);
+            text-align: center;
+            font-weight: bolder;
+        }
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <h1>Tabelas grandes</h1>
+
+    <table>
+        
+        <caption> Unidades federativas do Brasil por população
+        </caption>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+                <th>Porcentagem</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">46 179 008</td>
+                <td class="num">21,55%</td>
+            </tr>
+            <tr>
+                <td> Minas Gerais</td>
+                <td class="num">21 460 311</td>
+                <td class="num">10,01%</td>
+            </tr>
+            <tr>
+                <td> Rio de Janeiro</td>
+                <td class="num">17 225 410</td>
+                <td class="num">8,04%</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 889 472</td>
+                <td class="num">6,95%</td>
+            </tr>
+            <tr>
+                <td> Paraná</td>
+                <td class="num">11 952 456</td>
+                <td class="num">5,57%</td>
+            </tr>
+            <tr>
+                <td> Rio Grande do Sul</td>
+                <td class="num">11 233 317</td>
+                <td class="num">5,26%</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 583 176</td>
+                <td class="num">4,48%</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9 302 211</td>
+                <td class="num">4,34%</td>
+            </tr>
+            <tr>
+                <td> Pará</td>
+                <td class="num">8 756 324</td>
+                <td class="num">4,08%</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">8 312 759</td>
+                <td class="num">3,84%</td>
+            </tr>
+            <tr>
+                <td> Goiás</td>
+                <td class="num">7 495 033</td>
+                <td class="num">3,48%</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7 024 557</td>
+                <td class="num">3,29%</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4 360 926</td>
+                <td class="num">2,02%</td>
+            </tr>
+            <tr>
+                <td> Paraíba</td>
+                <td class="num">4 182 828</td>
+                <td class="num">1,95%</td>
+            </tr><tr>
+                <td> Espírito Santo</td>
+                <td class="num">4 150 692</td>
+                <td class="num">1,93%</td>
+            </tr><tr>
+                <td>Mato Grosso</td>
+                <td class="num">3 950 330</td>
+                <td class="num">1,82%</td>
+            </tr><tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3 463 737</td>
+                <td class="num">1,62%</td>
+            </tr><tr>
+                <td>Piauí</td>
+                <td class="num">3 392 617</td>
+                <td class="num">1,59%</td>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3 221 128</td>
+                <td class="num">1,51%</td>
+            </tr>
+             <tr>
+                <td>Distrito Federal</td>
+                <td class="num">2 817 381</td>
+                <td class="num">1,40%</td>
+            </tr>
+             <tr>
+                <td>Sergipe</td>
+                <td class="num">2 307 255</td>
+                <td class="num">1,08%</td>
+                
+            </tr>
+             <tr>
+                <td>Rondônia</td>
+                <td class="num">1 757 338</td>
+                <td class="num">0,82%</td>
+            </tr>
+             <tr>
+                <td>Tocantins</td>
+                <td class="num">1 595 994</td>
+                <td class="num">0,74%</td>
+            </tr>
+             <tr>
+                <td>Acre</td>
+                <td class="num">887 794</td>
+                <td class="num">0,41%</td>
+            </tr>
+             <tr>
+                <td>Amapá</td>
+                <td class="num">809 953</td>
+                <td class="num">0,38%</td>
+            </tr>
+             <tr>
+                <td>Roraima</td>
+                <td class="num">761 012</td>
+                <td class="num">0,35%</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de habitantes</th>
+                <td> <strong>214 211 951</strong> </td>
+                <td>100%</td>
+            </tr>
+        </tfoot>
+
+
+    </table>
+
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ratione unde quo rerum maiores facere commodi. Ipsum quo dolores vel nostrum consequatur adipisci rem, porro architecto quibusdam! Facilis, perspiciatis exercitationem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, atque? Fuga dolorem illo incidunt perferendis, quam sunt eum, doloribus perspiciatis quas, voluptates libero? Officiis a mollitia, numquam sit veniam dicta? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos reprehenderit soluta ullam recusandae dolore voluptates quis fugiat nesciunt? Accusantium impedit deleniti cumque perspiciatis nemo? Cum, beatae a. Quo, aliquam facilis.</P>
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ratione unde quo rerum maiores facere commodi. Ipsum quo dolores vel nostrum consequatur adipisci rem, porro architecto quibusdam! Facilis, perspiciatis exercitationem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, atque? Fuga dolorem illo incidunt perferendis, quam sunt eum, doloribus perspiciatis quas, voluptates libero? Officiis a mollitia, numquam sit veniam dicta? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos reprehenderit soluta ullam recusandae dolore voluptates quis fugiat nesciunt? Accusantium impedit deleniti cumque perspiciatis nemo? Cum, beatae a. Quo, aliquam facilis.</P>
+
+
+    <footer>
+        <p class="botão volta"> <a href="index.html">Pagina anterior</a> </p>
+        <p><a href="tabela03.html">Proxima pag</a></p>
+    </footer>
+
+   
+    
+</body>
+</html>
