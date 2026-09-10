@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+
+    <h1>Meu primeiro formulário</h1>
+
+
+     <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Dados de cadastro</legend>
+            <p>
+                <label for="iname">Nome</label>
+                <input type="text" name="nome" id="iname" minlength="5" maxlength="30" placeholder="Nome completo" autocomplete="name" required>
+            </p>
+            <p>
+                <label for="imedia">Média</label>
+                <input type="number" name="media" id="imedia" min="0" max="10" step="0.1" required >
+            </p>
+            <p>
+                <label for="idata">Data</label>
+                <input type="date" name="data" id="idata">
+            </p>
+            <p>
+                <label for="ihora">Hora</label>
+                <input type="time" name="hora" id="ihora" required>
+            </p>
+            <p>
+                <label for="imes">Mês</label>
+                <input type="month" name="mes" id="imes" required >
+            </p>
+            <p>
+                <label for="iemail">Email</label>
+                <input type="email" name="email" id="iemail"required>
+            </p>
+             <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="telefone" id="itel" placeholder="(XX) XXXX-XXXX" required>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Sexo</legend>
+            <label for="isexfem">Femenino</label>
+            <input type="radio" name="sexo" id="isexfem"> <br>
+
+            <label for="isexmas">Masculino</label>
+            <input type="radio" name="sexo" id="isexmas" checked >
+        </fieldset>
+
+        <fieldset>
+            <legend>Animes favoritos </legend>
+            <label for="ianime1">Atacck on titan</label> 
+            <input type="checkbox" name="anime.attack-on-titan" id="ianime1"> <br>
+
+            <label for="ianime2">Jujutsu-Kaisen</label>
+            <input type="checkbox" name="anime.jujutsu-kaisen" id="ianime2"> <br>
+
+            <label for="ianime3">One Piece</label>
+            <input type="checkbox" name="anime.one-piece" id="ianime3"> <br>
+
+            <label for="ianime4">Naruto</label>
+            <input type="checkbox" name="anime.naruto" id="ianime4">
+
+        </fieldset>
+
+        <fieldset>
+            <legend>a sla</legend>
+            <label for="inivel">Nível de satisfação</label>
+            <input type="range" name="nivel-satisfacao" id="inivel"> <br>
+
+            <label for="ift">Carregue sua foto</label>
+            <input type="file" name="foto" id="itf">
+        </fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <p>
+            <input type="submit"> 
+            <input type="reset" value="apagar">
+        </p>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+     </form>
+
+       
+
+    
+
+
+
+    
+</body>
+</html>
