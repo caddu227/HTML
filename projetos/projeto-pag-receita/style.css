@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f4eb;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 60px;
+}
+
+
+.logo-titulo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.img-logo {
+    width: auto;
+   
+}
+
+header > .logo-titulo > h1 {
+    color: #ff6b00;
+}
+
+header > nav > a {
+    color: #ff6b00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    margin: 20px auto;
+    max-width: 1100px;
+}
